@@ -7,14 +7,11 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     
     <script>
-        // మీ మినీ యాప్ కోసం మోనెట్యాగ్ స్మార్ట్‌లింక్ లేదా ఇన్-పేజీ పుష్ యాడ్ కోడ్ ఇక్కడ పెట్టాలి
+        // ⚠️ మీ మోనెట్యాగ్ స్మార్ట్‌లింక్ ఇక్కడ పేస్ట్ చేయండి
         const monetag_ad_url = "https://your_monetag_smartlink_here.com"; 
 
         function openMovieLink(telegramFileUrl) {
-            // యూజర్ క్లిక్ చేయగానే మొదట మోనెట్యాగ్ యాడ్ కొత్త టాబ్‌లో ఓపెన్ అవుతుంది
             window.open(monetag_ad_url, '_blank');
-            
-            // ఆ తర్వాత 1 సెకను ఆగి ఒరిజినల్ టెలిగ్రామ్ మూవీ లింక్ ఓపెన్ అవుతుంది
             setTimeout(() => {
                 window.location.href = telegramFileUrl;
             }, 1000);
@@ -22,71 +19,15 @@
     </script>
 
     <style>
-        body {
-            background-color: #0f0f0f;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 10px;
-            text-align: center;
-        }
-        .header {
-            padding: 15px;
-            background: linear-gradient(135deg, #11b98f, #ffcc00);
-            border-radius: 10px;
-            margin-bottom: 15px;
-            font-weight: bold;
-            font-size: 22px;
-            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-        }
-        .search-bar {
-            width: 90%;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            margin-bottom: 20px;
-            background-color: #222;
-            color: #fff;
-            outline: none;
-        }
-        .movie-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            padding: 5px;
-        }
-        .movie-card {
-            background-color: #1a1a1a;
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid #333;
-            transition: 0.3s;
-        }
-        .movie-card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-        .movie-title {
-            padding: 8px;
-            font-size: 14px;
-            font-weight: bold;
-            height: 35px;
-            overflow: hidden;
-        }
-        .download-btn {
-            background-color: #11b98f;
-            color: white;
-            border: none;
-            padding: 8px 0;
-            width: 100%;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .download-btn:hover {
-            background-color: #ffcc00;
-            color: #000;
-        }
+        body { background-color: #0f0f0f; color: #ffffff; font-family: Arial, sans-serif; margin: 0; padding: 10px; text-align: center; }
+        .header { padding: 15px; background: linear-gradient(135deg, #11b98f, #ffcc00); border-radius: 10px; margin-bottom: 15px; font-weight: bold; font-size: 22px; text-shadow: 1px 1px 5px rgba(0,0,0,0.5); }
+        .search-bar { width: 90%; padding: 10px; border-radius: 5px; border: none; margin-bottom: 20px; background-color: #222; color: #fff; outline: none; }
+        .movie-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; padding: 5px; }
+        .movie-card { background-color: #1a1a1a; border-radius: 8px; overflow: hidden; border: 1px solid #333; transition: 0.3s; }
+        .movie-card img { width: 100%; height: 220px; object-fit: cover; }
+        .movie-title { padding: 8px; font-size: 14px; font-weight: bold; height: 35px; overflow: hidden; }
+        .download-btn { background-color: #11b98f; color: white; border: none; padding: 8px 0; width: 100%; font-weight: bold; cursor: pointer; }
+        .download-btn:hover { background-color: #ffcc00; color: #000; }
     </style>
 </head>
 <body>
@@ -97,23 +38,28 @@
     <div class="movie-grid">
         
         <div class="movie-card">
-            <img src="https://image.tmdb.org/t/p/w500/or066g3vWv26Mv16G46t7E0hxwi.jpg" alt="Movie Poster">
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00431326-lknudnclfw-movie-poster.jpg" alt="Movie Poster">
             <div class="movie-title">Nagabandham (2026) HD</div>
             <button class="download-btn" onclick="openMovieLink('https://t.me/your_telegram_file_link_1')">Download</button>
         </div>
 
         <div class="movie-card">
-            <img src="https://image.tmdb.org/t/p/w500/7WsyCh6Zg7m6pZfXv97N7vFcZcl.jpg" alt="Movie Poster">
+            <img src="https://m.media-amazon.com/images/M/MVmNWRiNzAtMGY4Zi00NTRmLTkyYTItYjg4M2M1N2FlYjYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
             <div class="movie-title">From Season 3 (Telugu)</div>
             <button class="download-btn" onclick="openMovieLink('https://t.me/your_telegram_file_link_2')">Download</button>
+        </div>
+
+        <div class="movie-card">
+            <img src="https://m.media-amazon.com/images/M/MVmNGE0NTEwN2QtMThmMC00YzA4LWI2MzctMzViYjc2NGE1MTExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
+            <div class="movie-title">My Fault (Telugu) HD</div>
+            <button class="download-btn" onclick="openMovieLink('https://t.me/your_telegram_file_link_3')">Download</button>
         </div>
 
     </div>
 
     <script>
-        // టెలిగ్రామ్ మినీ యాప్ ఆటోమేటిక్ లోడ్ అవ్వడానికి
         Telegram.WebApp.ready();
-        Telegram.WebApp.expand(); // యాప్ స్క్రీన్ మొత్తం ఓపెన్ అవుతుంది
+        Telegram.WebApp.expand();
     </script>
 </body>
 </html>
