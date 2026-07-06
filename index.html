@@ -6,7 +6,9 @@
     <title>OG Matta HUB</title>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
+        // ⚠️ మీ మోనెట్యాగ్ డైరెక్ట్/స్మార్ట్‌లింక్ ఇక్కడ పెట్టండి
         const monetag_ad_url = "https://your_monetag_smartlink_here.com"; 
+
         function openMovieLink(telegramFileUrl) {
             window.open(monetag_ad_url, '_blank');
             setTimeout(() => {
@@ -21,30 +23,37 @@
         .movie-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; padding: 5px; }
         .movie-card { background-color: #1a1a1a; border-radius: 8px; overflow: hidden; border: 1px solid #333; transition: 0.3s; }
         .movie-card img { width: 100%; height: 220px; object-fit: cover; }
-        .movie-title { padding: 8px; font-size: 14px; font-weight: bold; height: 35px; overflow: hidden; }
-        .download-btn { background-color: #11b98f; color: white; border: none; padding: 8px 0; width: 100%; font-weight: bold; cursor: pointer; }
+        .movie-title { padding: 8px; font-size: 14px; font-weight: bold; height: 35px; overflow: hidden; text-align: center; }
+        .download-btn { background-color: #11b98f; color: white; border: none; padding: 8px 0; width: 100%; font-weight: bold; cursor: pointer; border-radius: 0 0 7px 7px; }
     </style>
 </head>
 <body>
+
     <div class="header">OG MATTA HUB</div>
     <input type="text" class="search-bar" placeholder="సినిమా పేరు వెతకండి...">
+
     <div class="movie-grid">
+        
         <div class="movie-card">
             <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC/et00431326-lknudnclfw-movie-poster.jpg" alt="Movie Poster">
             <div class="movie-title">Nagabandham (2026)</div>
             <button class="download-btn" onclick="openMovieLink('https://t.me/your_telegram_file_link_1')">Download</button>
         </div>
+
         <div class="movie-card">
             <img src="https://m.media-amazon.com/images/M/MVmNWRiNzAtMGY4Zi00NTRmLTkyYTItYjg4M2M1N2FlYjYxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
-            <div class="movie-title">From Season 3 (Telugu)</div>
+            <div class="movie-title">From Season 3</div>
             <button class="download-btn" onclick="openMovieLink('https://t.me/your_telegram_file_link_2')">Download</button>
         </div>
+
         <div class="movie-card">
             <img src="https://m.media-amazon.com/images/M/MVmNGE0NTEwN2QtMThmMC00YzA4LWI2MzctMzViYjc2NGE1MTExXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
-            <div class="movie-title">My Fault (Telugu) HD</div>
+            <div class="movie-title">My Fault (Telugu)</div>
             <button class="download-btn" onclick="openMovieLink('https://t.me/your_telegram_file_link_3')">Download</button>
         </div>
+
     </div>
+
     <script>
         Telegram.WebApp.ready();
         Telegram.WebApp.expand();
